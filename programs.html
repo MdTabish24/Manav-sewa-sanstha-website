@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programs - Manav Seva Sanstha | Government Schemes & CSR Initiatives</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    /* Compact Programs */
+    .about-content {
+        padding: 1rem 0 !important;
+    }
+    
+    .about-content .section-header {
+        margin-bottom: 1rem !important;
+    }
+    
+    .about-content p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    /* Desktop Grid Layout */
+    .programs-grid-layout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+    
+    .program-card {
+        background: white;
+        border-radius: 6px;
+        padding: 0.8rem;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        border-left: 3px solid var(--primary-color);
+    }
+    
+    .program-card h4 {
+        font-size: 1.2rem;
+        margin: 0 0 0.4rem 0;
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+    
+    .program-card p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin: 0;
+        color: #666;
+    }
+    
+    .modern-programs-layout { display: block; }
+    .mobile-programs-layout { display: none; }
+
+    @media (max-width: 768px) {
+        .modern-programs-layout { display: none; }
+        .mobile-programs-layout { display: block; }
+        
+        .about-content {
+            padding: 0.8rem 0 !important;
+        }
+        
+        .about-content p {
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .programs-grid-layout {
+            grid-template-columns: 1fr;
+            gap: 0.6rem;
+        }
+    }
+
+    /* Mobile Accordion */
+    .mobile-accordion {
+        width: 100%;
+        margin-top: 0.8rem;
+    }
+    .accordion-item {
+        background: #fff;
+        border-radius: 6px;
+        margin-bottom: 0.4rem;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        overflow: hidden;
+        border-left: 3px solid var(--primary-color);
+    }
+    .accordion-header {
+        width: 100%;
+        padding: 0.6rem 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f9f9f9;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+    }
+    .accordion-title {
+        font-weight: 600;
+        color: var(--dark-color);
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+    .accordion-toggle {
+        font-size: 1rem;
+        color: var(--primary-color);
+        transition: transform 0.3s ease;
+        min-width: 18px;
+    }
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    .accordion-content.active {
+        max-height: 120px;
+    }
+    .accordion-body {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: #666;
+    }
+
+    /* Companies Grid */
+    .programs-page-companies .desktop-companies-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 0.8rem;
+        padding: 1.5rem 0;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .programs-page-companies .company-grid-item {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        box-shadow: 0 3px 10px rgba(141, 180, 160, 0.15);
+        transition: all 0.3s ease;
+    }
+
+    .programs-page-companies .company-grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    .programs-page-companies .mobile-companies-grid {
+        display: none;
+        padding: 1rem 0;
+    }
+
+    .programs-page-companies .mobile-company-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .programs-page-companies .mobile-company-item {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+        box-shadow: 0 2px 6px rgba(141, 180, 160, 0.15);
+    }
+
+    .programs-page-companies .mobile-company-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    @media (max-width: 768px) {
+        .programs-page-companies .desktop-companies-grid {
+            display: none !important;
+        }
+        
+        .programs-page-companies .mobile-companies-grid {
+            display: block !important;
+        }
+    }
+
+    /* Sections */
+    .about-hero {
+        padding: 2.5rem 0 !important;
+        margin-top: 0 !important;
+    }
+    
+    .about-hero h1 {
+        font-size: 2rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    .about-hero p {
+        font-size: 1rem !important;
+    }
+    
+    .companies-section {
+        padding: 1.5rem 0 !important;
+    }
+    
+    .section-header {
+        margin-bottom: 1rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.4rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .section-description {
+        font-size: 0.9rem !important;
+    }
+    
+    .compact-section {
+        padding: 1.5rem 0 !important;
+    }
+    
+    .compact-grid {
+        gap: 1rem !important;
+    }
+    
+    .compact-card {
+        padding: 1.2rem !important;
+    }
+    
+    .compact-card h4 {
+        font-size: 1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .compact-card p {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+    }
+    
+    .donation-impact {
+        padding: 2rem 0 !important;
+    }
+
+    /* Fix navbar overlap and mobile menu */
+    body {
+        padding-top: 80px !important;
+    }
+    
+    @media (max-width: 768px) {
+        body {
+            padding-top: 70px !important;
+        }
+        
+        .nav-menu {
+            padding: 1rem !important;
+        }
+        
+        .nav-menu li {
+            width: 100% !important;
+            margin-bottom: 0.5rem !important;
+        }
+        
+        .nav-menu .nav-link {
+            display: block !important;
+            width: 100% !important;
+            padding: 1rem !important;
+            text-align: center !important;
+            border-radius: 8px !important;
+            background: rgba(255,255,255,0.1) !important;
+        }
+        
+        .nav-menu .donate-btn {
+            background: var(--primary-color) !important;
+            color: white !important;
+        }
+    }
+</style>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="1.png" alt="Manav Seva Sanstha" class="logo-img">
+                <div class="logo-text">
+                    <h2>MANAV SEVA SANSTHA</h2>
+                    <p>AN ISO 9001:2015 CERTIFIED NGO</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="programs.html" class="nav-link active">Our Work</a></li>
+                <li><a href="impact.html" class="nav-link">Impact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="donate.html" class="nav-link donate-btn">Donate Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Programs Hero -->
+    <section class="about-hero animate-on-scroll">
+        <div class="container">
+            <h1>Our Programs & Projects</h1>
+            <p>Comprehensive skill development programs across government schemes and CSR partnerships</p>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section class="companies-section programs-page-companies" style="background: var(--sage-light);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Network</span>
+                <h2 class="section-title">Associated Companies & Partners</h2>
+                <p class="section-description">Trusted partnerships with leading organizations</p>
+            </div>
+            
+            <!-- Desktop Grid Layout -->
+            <div class="desktop-companies-grid">
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="11.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="12.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="13.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="14.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="15.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="16.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="17.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="18.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="19.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="20.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="21.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="22.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="23.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="24.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="25.png" alt="Partner">
+                </div>
+                <div class="company-grid-item animate-scale stagger-animation">
+                    <img src="26.png" alt="Partner">
+                </div>
+            </div>
+            
+            <!-- Mobile Companies Grid -->
+            <div class="mobile-companies-grid">
+                <div class="mobile-company-row">
+                    <div class="mobile-company-item">
+                        <img src="11.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="12.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="13.png" alt="Partner">
+                    </div>
+                </div>
+                <div class="mobile-company-row">
+                    <div class="mobile-company-item">
+                        <img src="14.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="15.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="16.png" alt="Partner">
+                    </div>
+                </div>
+                <div class="mobile-company-row">
+                    <div class="mobile-company-item">
+                        <img src="17.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="18.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="19.png" alt="Partner">
+                    </div>
+                </div>
+                <div class="mobile-company-row">
+                    <div class="mobile-company-item">
+                        <img src="20.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="21.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="22.png" alt="Partner">
+                    </div>
+                </div>
+                <div class="mobile-company-row">
+                    <div class="mobile-company-item">
+                        <img src="23.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="24.png" alt="Partner">
+                    </div>
+                    <div class="mobile-company-item">
+                        <img src="25.png" alt="Partner">
+                    </div>
+                </div>
+                <div class="mobile-company-row">
+                    <div class="mobile-company-item">
+                        <img src="26.png" alt="Partner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Overview -->
+    <section class="about-content">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Projects</span>
+                <h2 class="section-title">Our Projects</h2>
+            </div>
+            
+            <p>Comprehensive skill development programs through government schemes and CSR partnerships:</p>
+            
+            <!-- Desktop Layout -->
+            <div class="modern-programs-layout">
+                <div class="programs-grid-layout">
+                    <div class="program-card animate-scale stagger-animation">
+                        <h4>PMKVY</h4>
+                        <p>NSDC-certified training in IT, healthcare, beauty, automotive & technical trades with placement support.</p>
+                    </div>
+                    <div class="program-card animate-scale stagger-animation">
+                        <h4>PM-DAKSH</h4>
+                        <p>Free skill development for SC/ST/OBC communities in mobile app development, digital marketing & healthcare support.</p>
+                    </div>
+                    <div class="program-card animate-scale stagger-animation">
+                        <h4>PMKUA</h4>
+                        <p>Skills in fashion design, social media marketing & embroidery for youth and women with NSDC certification.</p>
+                    </div>
+                    <div class="program-card animate-scale stagger-animation">
+                        <h4>Special PMKVY</h4>
+                        <p>Accelerated training in EV mechanics, beauty & wellness, digital skills & fitness training.</p>
+                    </div>
+                    <div class="program-card animate-scale stagger-animation">
+                        <h4>NULM</h4>
+                        <p>Urban skill development in beauty & wellness, IT services & technical support for disadvantaged populations.</p>
+                    </div>
+                    <div class="program-card animate-scale stagger-animation">
+                        <h4>DPC & State Initiatives</h4>
+                        <p>Regional training in plumbing, electrical work, fabricating & field technician roles.</p>
+                    </div>
+                    <div class="program-card animate-scale stagger-animation" style="grid-column: 1 / -1;">
+                        <h4>CSR Initiatives</h4>
+                        <p>Corporate partnerships for digital marketing, mobile app development, hand embroidery & beauty training with detailed impact reporting.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Layout -->
+            <div class="mobile-programs-layout">
+                <div class="mobile-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">PMKVY</div>
+                            <div class="accordion-toggle">+</div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">NSDC-certified training in IT, healthcare, beauty, automotive & technical trades with placement support.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">PM-DAKSH</div>
+                            <div class="accordion-toggle">+</div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">Free skill development for SC/ST/OBC communities in mobile app development, digital marketing & healthcare support.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">PMKUA</div>
+                            <div class="accordion-toggle">+</div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">Skills in fashion design, social media marketing & embroidery for youth and women with NSDC certification.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Special PMKVY</div>
+                            <div class="accordion-toggle">+</div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">Accelerated training in EV mechanics, beauty & wellness, digital skills & fitness training.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">NULM</div>
+                            <div class="accordion-toggle">+</div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">Urban skill development in beauty & wellness, IT services & technical support for disadvantaged populations.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">DPC & State Initiatives</div>
+                            <div class="accordion-toggle">+</div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">Regional training in plumbing, electrical work, fabricating & field technician roles.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">CSR Initiatives</div>
+                            <div class="accordion-toggle">+</div>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-body">Corporate partnerships for digital marketing, mobile app development, hand embroidery & beauty training with detailed impact reporting.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Partner With Us -->
+    <section class="compact-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Approach</span>
+                <h2 class="section-title">Why Partner with Manav Seva Sanstha?</h2>
+            </div>
+            
+            <div class="compact-grid">
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>Community-Based Needs Assessment</h4>
+                    <p>Thorough community assessments to design programs that meet specific area needs, ensuring high relevance and immediate impact.</p>
+                </div>
+                
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h4>Scalable Program Design</h4>
+                    <p>Each initiative is crafted to be scalable and sustainable, allowing for regional expansion based on local demand and resources.</p>
+                </div>
+                
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Collaborative Partnership with SSCs</h4>
+                    <p>Partnerships with SSCs ensure training aligns with industry standards and provides certifications that enhance job readiness.</p>
+                </div>
+                
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Impact Measurement & Reporting</h4>
+                    <p>Detailed impact metrics and progress reports provided to CSR partners, ensuring transparency, accountability, and long-term impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="donation-impact">
+        <div class="container">
+            <div class="impact-content animate-on-scroll">
+                <h2 class="impact-title">Join Our Mission</h2>
+                <p class="impact-description">
+                    Partner with us to create sustainable change and empower communities across India through comprehensive skill development programs aligned with government and CSR objectives.
+                </p>
+                <div class="cta-section">
+                    <h3>Start the Ripple</h3>
+                    <a href="donate.html" class="btn-change">Support Our Programs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-section">
+                    <img src="1.png" alt="Manav Seva Sanstha" class="footer-logo">
+                    <h3>Manav Seva Sanstha</h3>
+                    <p>Empowering Lives Through Skill Development</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Behind Ahmad Peer, First Rabodi, Dr. Ansari Road, Thane - 400601, Maharashtra</p>
+                    <p><i class="fas fa-phone"></i> +91 9860657949, +91 9370944107</p>
+                    <p><i class="fas fa-envelope"></i> manavsevasanstha@gmail.com</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Work</a></li>
+                        <li><a href="impact.html">Impact</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-disclaimer">
+                    <h4>Additional Information</h4>
+                    <p><strong>Head Office:</strong> Universal Skill Development Center, Opp. Sagar Plaza Hotel, Naigaon Road, Bhiwandi, Dist. Thane - 421302, Maharashtra</p>
+                    <p><strong>Website:</strong> www.manavsevasanstha.org</p>
+                    <p>Manav Seva Sanstha is committed to transparency and accountability. All donations are tax-exempt under Section 80G of the Income Tax Act.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Manav Seva Sanstha. All rights reserved. | ISO 9001:2015 Certified NGO | Registered under Maharashtra Public Trust Act 1950</p>
+                <p>Privacy Policy | Terms of Use | NSDC Training Partner</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    function toggleAccordion(button) {
+        const content = button.nextElementSibling;
+        const toggle = button.querySelector('.accordion-toggle');
+        
+        if (content.classList.contains('active')) {
+            content.classList.remove('active');
+            toggle.textContent = '+';
+        } else {
+            document.querySelectorAll('.accordion-content.active').forEach(acc => {
+                acc.classList.remove('active');
+                acc.previousElementSibling.querySelector('.accordion-toggle').textContent = '+';
+            });
+            
+            content.classList.add('active');
+            toggle.textContent = '−';
+        }
+    }
+
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+            }
+        });
+    }, observerOptions);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const animateElements = document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale, .stagger-animation');
+        animateElements.forEach(el => observer.observe(el));
+    });
+    </script>
+</body>
+</html>
