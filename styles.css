@@ -73,9 +73,9 @@ h4 { font-size: 1.5rem; }
 position: fixed;
 top: 0;
 width: 100%;
-background: linear-gradient(135deg, rgba(100, 129, 114, 0.95), rgba(79, 112, 98, 0.95));
+background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 backdrop-filter: blur(20px);
-box-shadow: 0 8px 32px rgba(141, 180, 160, 0.3);
+box-shadow: 0 8px 32px rgba(230, 126, 34, 0.3);
 z-index: 1000;
 transition: var(--transition);
 border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -83,7 +83,7 @@ border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 
 .navbar.scrolled {
 background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-box-shadow: 0 12px 40px rgba(86, 110, 97, 0.4);
+box-shadow: 0 12px 40px rgba(230, 126, 34, 0.4);
 }
 
 .nav-container {
@@ -188,6 +188,8 @@ background: rgba(255, 255, 255, 0.2);
 padding: 0.8rem;
 border-radius: 12px;
 backdrop-filter: blur(10px);
+z-index: 1002;
+position: relative;
 }
 
 /* UPDATED Hero Carousel Styles - Without Greenish Overlay */
@@ -1798,11 +1800,9 @@ body {
 padding-top: 70px !important;
 }
 
-text
-
 .hamburger {
-    display: flex;
-    z-index: 1001;
+    display: flex !important;
+    z-index: 1002 !important;
 }
 
 .nav-container {
