@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Manav Seva Sanstha | Empowering Communities Since 2014</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="1.png" alt="Manav Seva Sanstha" class="logo-img">
+                <div class="logo-text">
+                    <h2>MANAV SEVA SANSTHA</h2>
+                    <p>AN ISO 9001:2015 CERTIFIED NGO</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About Us</a></li>
+                <li><a href="programs.html" class="nav-link">Our Work</a></li>
+                <li><a href="impact.html" class="nav-link">Impact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="donate.html" class="nav-link donate-btn">Donate Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero animate-on-scroll">
+        <div class="container">
+            <h1>About Manav Seva Sanstha</h1>
+            <p>A decade of excellence in transforming lives through skill development, women & youth empowerment, and sustainable community growth across India</p>
+        </div>
+    </section>
+
+    <!-- Main About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="animate-slide-left">
+                    <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                        <span class="section-tag">Who We Are</span>
+                        <h2 class="section-title">Pioneering Change Since 2014</h2>
+                    </div>
+                    <p class="lead-text">
+                        Manav Seva Sanstha is an ISO 9001:2015 certified non-governmental organization dedicated to empowering underprivileged communities through innovative skill development, education, healthcare, and women & youth empowerment initiatives.
+                    </p>
+                    <p>
+                        As a pan-India training partner with NSDC and Skill India ministry, we have transformed over 15,000 lives through vocational training and provided 3,000+ job placements across various sectors including IT-ITES, Beauty & Wellness, Automotive, and Technical trades.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-box stagger-animation">
+                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-label">Years of Service</span>
+                        </div>
+                        <div class="stat-box stagger-animation">
+                            <span class="stat-number" data-target="15000">0</span>
+                            <span class="stat-label">Lives Transformed</span>
+                        </div>
+                        <div class="stat-box stagger-animation">
+                            <span class="stat-number" data-target="3000">0</span>
+                            <span class="stat-label">Job Placements</span>
+                        </div>
+                        <div class="stat-box stagger-animation">
+                            <span class="stat-number" data-target="12">0</span>
+                            <span class="stat-label">Training Sectors</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-slide-right">
+                    <img src="h4.jpeg" alt="Our Impact" style="width: 100%; border-radius: 15px; box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Vision Values -->
+    <section class="compact-section" style="background: var(--sage-light);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Foundation</span>
+                <h2 class="section-title">Mission, Vision & Values</h2>
+            </div>
+            
+            <!-- Desktop Grid -->
+            <div class="compact-grid" style="display: block;">
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To empower marginalized communities through education and skill development initiatives, fostering entrepreneurship, and promoting women & youth empowerment and gender equality.</p>
+                </div>
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>A world where every individual, regardless of their background, has equal access to opportunities, resources, and rights, and where communities thrive in harmony.</p>
+                </div>
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Integrity & Transparency, Inclusivity & Equality, Innovation & Excellence, Sustainability & Impact, Community Partnership</p>
+                </div>
+            </div>
+            
+            <!-- Mobile Tabs -->
+            <div class="mobile-tabs" style="display: none;">
+                <button class="mobile-tab active" onclick="showTab('mission', this)">Mission</button>
+                <button class="mobile-tab" onclick="showTab('vision', this)">Vision</button>
+                <button class="mobile-tab" onclick="showTab('values', this)">Values</button>
+            </div>
+            
+            <div class="mobile-tab-content active" id="mission" style="display: none;">
+                <h4><i class="fas fa-bullseye" style="margin-right: 0.5rem; color: var(--primary-color);"></i>Our Mission</h4>
+                <p>To empower marginalized communities through education and skill development initiatives, fostering entrepreneurship, and promoting women & youth empowerment and gender equality.</p>
+            </div>
+            
+            <div class="mobile-tab-content" id="vision" style="display: none;">
+                <h4><i class="fas fa-eye" style="margin-right: 0.5rem; color: var(--primary-color);"></i>Our Vision</h4>
+                <p>A world where every individual, regardless of their background, has equal access to opportunities, resources, and rights, and where communities thrive in harmony.</p>
+            </div>
+            
+            <div class="mobile-tab-content" id="values" style="display: none;">
+                <h4><i class="fas fa-heart" style="margin-right: 0.5rem; color: var(--primary-color);"></i>Our Values</h4>
+                <p>Integrity & Transparency, Inclusivity & Equality, Innovation & Excellence, Sustainability & Impact, Community Partnership</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline -->
+    <section class="compact-section" style="background: linear-gradient(135deg, #ffc38a 0%, #d49f63 50%, #ffc38a 100%);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Journey</span>
+                <h2 class="section-title">Key Milestones</h2>
+            </div>
+            <div class="about-grid">
+                <!-- Desktop Timeline -->
+                <div class="animate-slide-left" style="display: block;">
+                    <div class="timeline-compact">
+                        <div class="timeline-item-compact stagger-animation">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content-compact">
+                                <span class="timeline-year">2014</span>
+                                <h4>Foundation</h4>
+                                <p>Established and registered under Maharashtra Public Trust Act 1950</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item-compact stagger-animation">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content-compact">
+                                <span class="timeline-year">2016</span>
+                                <h4>NSDC Partnership</h4>
+                                <p>Official partner with NSDC, Skill India, and multiple Sector Skill Councils</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item-compact stagger-animation">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content-compact">
+                                <span class="timeline-year">2018</span>
+                                <h4>ISO Certification</h4>
+                                <p>Achieved ISO 9001:2015 certification for quality management</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item-compact stagger-animation">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content-compact">
+                                <span class="timeline-year">2024</span>
+                                <h4>15,000+ Impact</h4>
+                                <p>Transformed over 15,000 lives with 3,000+ job placements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Compact Timeline -->
+                <div class="timeline-mobile" style="display: none;">
+                    <div class="timeline-item-mobile">
+                        <div class="timeline-year-mobile">2014</div>
+                        <div class="timeline-content-mobile">
+                            <h5>Foundation</h5>
+                            <p>Registered under Maharashtra Public Trust Act 1950</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item-mobile">
+                        <div class="timeline-year-mobile">2016</div>
+                        <div class="timeline-content-mobile">
+                            <h5>NSDC Partnership</h5>
+                            <p>Official training partner with NSDC</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item-mobile">
+                        <div class="timeline-year-mobile">2018</div>
+                        <div class="timeline-content-mobile">
+                            <h5>ISO Certification</h5>
+                            <p>ISO 9001:2015 certified for quality management</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item-mobile">
+                        <div class="timeline-year-mobile">2024</div>
+                        <div class="timeline-content-mobile">
+                            <h5>12,000+ Impact</h5>
+                            <p>Transformed 15,000+ lives with 3,000+ job placements</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-slide-right">
+                    <div class="compact-grid" style="grid-template-columns: 1fr;">
+                        <div class="compact-card">
+                            <div class="compact-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>Multiple Municipal Corporations</h4>
+<p>Our NGO operates across various municipal corporations with multiple branches</p>
+
+                        </div>
+                        <div class="compact-card">
+                            <div class="compact-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Skill India Ministry</h4>
+<p>Aligned with the vision of Ministry of Skill Development & Entrepreneurship (MSDE), Govt. of India</p>
+
+                        </div>
+                        <div class="compact-card">
+                            <div class="compact-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                           <h4>Pan India Existence</h4>
+<p>Our NGO operates across multiple states and municipal corporations with a strong nationwide presence</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Expertise -->
+    <section class="compact-section" style="background: var(--light-color);">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Expertise</span>
+                <h2 class="section-title">Training Sectors & Programs</h2>
+            </div>
+            <!-- Desktop Grid -->
+            <div class="compact-grid" style="display: block;">
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>IT & Digital Skills</h4>
+                    <p>Web Development, Digital Marketing, Mobile App Development, Social Media Marketing, Graphic Design</p>
+                </div>
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Technical Trades</h4>
+                    <p>Electrician, Fitter, Fabricator, Plumbing, Automobile & EV Mechanics, Field Technician</p>
+                </div>
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h4>Women & youth Empowerment</h4>
+                    <p>Beauty & Wellness, Fashion Design, Sewing Machine Operation, Traditional Hand Embroidery</p>
+                </div>
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Business Skills</h4>
+                    <p>Documentation Assistant, Account Executive, Business Correspondence, Business Facilitator</p>
+                </div>
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Healthcare Support</h4>
+                    <p>General Duty Assistant, Healthcare Worker roles, Fitness Training</p>
+                </div>
+                <div class="compact-card animate-scale stagger-animation">
+                    <div class="compact-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Education & Training</h4>
+                    <p>Teaching Training, Educational Awareness, Community Development Programs</p>
+                </div>
+            </div>
+            
+            <!-- Mobile Accordion -->
+            <div class="mobile-accordion" style="display: none;">
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="accordion-title">IT & Digital Skills</div>
+                        <div class="accordion-toggle">+</div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">Web Development, Digital Marketing, Mobile App Development, Social Media Marketing, Graphic Design</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon"><i class="fas fa-tools"></i></div>
+                        <div class="accordion-title">Technical Trades</div>
+                        <div class="accordion-toggle">+</div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">Electrician, Fitter, Fabricator, Plumbing, Automobile & EV Mechanics, Field Technician</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon"><i class="fas fa-female"></i></div>
+                        <div class="accordion-title">Women & youth Empowerment</div>
+                        <div class="accordion-toggle">+</div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">Beauty & Wellness, Fashion Design, Sewing Machine Operation, Traditional Hand Embroidery</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon"><i class="fas fa-briefcase"></i></div>
+                        <div class="accordion-title">Business Skills</div>
+                        <div class="accordion-toggle">+</div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">Documentation Assistant, Account Executive, Business Correspondence, Business Facilitator</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon"><i class="fas fa-heart"></i></div>
+                        <div class="accordion-title">Healthcare Support</div>
+                        <div class="accordion-toggle">+</div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">General Duty Assistant, Healthcare Worker roles, Fitness Training</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="accordion-title">Education & Training</div>
+                        <div class="accordion-toggle">+</div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">Teaching Training, Educational Awareness, Community Development Programs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="donation-impact">
+        <div class="container">
+            <div class="impact-content animate-on-scroll">
+                <h2 class="impact-title">Join Our Mission</h2>
+                <p class="impact-description">
+                    Partner with us to create sustainable change and empower communities across India through skill development, women & youth empowerment, and education initiatives.
+                </p>
+                <div class="cta-section">
+                    <h3>Drive the FutureE</h3>
+                    <a href="donate.html" class="btn-change">Support Our Cause</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-section">
+                    <img src="1.png" alt="Manav Seva Sanstha" class="footer-logo">
+                    <h3>Manav Seva Sanstha</h3>
+                    <p>Empowering Lives Through Skill Development</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Behind Ahmad Peer, First Rabodi, Dr. Ansari Road, Thane - 400601, Maharashtra</p>
+                    <p><i class="fas fa-phone"></i> +91 9860657949, +91 9370944107</p>
+                    <p><i class="fas fa-envelope"></i> manavsevasanstha@gmail.com</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Work</a></li>
+                        <li><a href="impact.html">Impact</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-disclaimer">
+                    <h4>Additional Information</h4>
+                    <p><strong>Head Office:</strong> Universal Skill Development Center, Opp. Sagar Plaza Hotel, Naigaon Road, Bhiwandi, Dist. Thane - 421302, Maharashtra</p>
+                    <p><strong>Website:</strong> www.manavsevasanstha.org</p>
+                    <p>Manav Seva Sanstha is committed to transparency and accountability. All donations are tax-exempt under Section 80G of the Income Tax Act.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Manav Seva Sanstha. All rights reserved. | ISO 9001:2015 Certified NGO | Registered under Maharashtra Public Trust Act 1950</p>
+                <p>Privacy Policy | Terms of Use | NSDC Training Partner</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        // Mobile tab functionality
+        function showTab(tabName, clickedTab) {
+            // Hide all tab contents
+            document.querySelectorAll('.mobile-tab-content').forEach(content => {
+                content.classList.remove('active');
+                content.style.display = 'none';
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.mobile-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            const selectedContent = document.getElementById(tabName);
+            selectedContent.classList.add('active');
+            selectedContent.style.display = 'block';
+            
+            // Add active class to clicked tab
+            clickedTab.classList.add('active');
+        }
+
+        // Mobile accordion functionality
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const toggle = button.querySelector('.accordion-toggle');
+            
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                toggle.textContent = '+';
+            } else {
+                // Close all other accordions
+                document.querySelectorAll('.accordion-content').forEach(acc => {
+                    acc.classList.remove('active');
+                });
+                document.querySelectorAll('.accordion-toggle').forEach(tog => {
+                    tog.textContent = '+';
+                });
+                
+                // Open clicked accordion
+                content.classList.add('active');
+                toggle.textContent = '−';
+            }
+        }
+
+        // Show/hide mobile vs desktop components
+        function handleResponsive() {
+            const isMobile = window.innerWidth <= 768;
+            
+            // Mission/Vision/Values
+            document.querySelectorAll('.compact-grid').forEach(grid => {
+                grid.style.display = isMobile ? 'none' : 'grid';
+            });
+            document.querySelectorAll('.mobile-tabs').forEach(tabs => {
+                tabs.style.display = isMobile ? 'flex' : 'none';
+            });
+            
+            // Show/hide tab contents based on mobile view
+            if (isMobile) {
+                document.querySelectorAll('.mobile-tab-content').forEach(content => {
+                    content.style.display = content.classList.contains('active') ? 'block' : 'none';
+                });
+            } else {
+                document.querySelectorAll('.mobile-tab-content').forEach(content => {
+                    content.style.display = 'none';
+                });
+            }
+            
+            // Timeline
+            document.querySelectorAll('.timeline-compact').forEach(timeline => {
+                timeline.parentElement.style.display = isMobile ? 'none' : 'block';
+            });
+            document.querySelectorAll('.timeline-mobile').forEach(timeline => {
+                timeline.style.display = isMobile ? 'block' : 'none';
+            });
+            
+            // Expertise accordion
+            document.querySelectorAll('.mobile-accordion').forEach(accordion => {
+                accordion.style.display = isMobile ? 'block' : 'none';
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale, .stagger-animation');
+            animateElements.forEach(el => observer.observe(el));
+            
+            handleResponsive();
+            window.addEventListener('resize', handleResponsive);
+        });
+    </script>
+</body>
+</html>
